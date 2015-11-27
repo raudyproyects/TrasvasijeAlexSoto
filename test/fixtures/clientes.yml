@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  rut: MyString
   nombre: MyString
-  rut: 1
   direccion: MyString
   fono: 1
 
 two:
+  rut: MyString
   nombre: MyString
-  rut: 1
   direccion: MyString
   fono: 1

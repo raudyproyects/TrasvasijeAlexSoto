@@ -1,11 +1,12 @@
 class User < ActiveRecord::Base
+  rolify
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  ROLES = %i[admin author]
+  ROLES = %i[administrador empleado]
 
   def roles=(roles)
    roles = [*roles].map { |r| r.to_sym }

@@ -3,15 +3,14 @@ class Ability
 
 	def initialize(user)
 		user ||= User.new
-   		if user.has_role? :admin
-    		 can :manage, :all
-   		elsif user.has_role? :author
-     		can :create, Cliente # author can create status
-     		can :update, Cliente # author can update status
-     		# can :destroy, Status # #uncomment this line, author can destroy status 
+   		if user.has_role? :administrador #Administrador puede hacer todo
+    		 can :manage, :all 
+   		elsif user.has_role? :empleado #Empleado puede Crear, Modificar y Listar, pero no puede Eliminar
+     		can :create, Cliente
+     		can :update, Cliente 
      		can :read, :all
-   		else
-     		can :read, :all
+   		#else
+     		#can :read, :all
    		end
 	end
 end

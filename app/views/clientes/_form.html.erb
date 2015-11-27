@@ -1,7 +1,7 @@
 <%= form_for(@cliente) do |f| %>
   <% if @cliente.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+      <h2><%= pluralize(@cliente.errors.count, "error") %>, no se puede guardar el cliente:</h2>
 
       <ul>
       <% @cliente.errors.full_messages.each do |message| %>
@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
+    <%= f.label :rut %><br>
+    <%= f.text_field :rut %>
   </div>
   <div class="field">
-    <%= f.label :rut %><br>
-    <%= f.number_field :rut %>
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
   </div>
   <div class="field">
     <%= f.label :direccion %><br>
@@ -28,6 +28,6 @@
     <%= f.number_field :fono %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Aceptar" %>
   </div>
 <% end %>
