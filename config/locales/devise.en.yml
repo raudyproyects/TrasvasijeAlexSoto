@@ -9,16 +9,16 @@ en:
     failure:
       already_authenticated: "Ya has iniciado sesión."
       inactive: "Your account was not activated yet."
-      invalid: "Correo electrónico o contraseña inválida."
+      invalid: "Usuario o contraseña inválida."
       invalid_token: "Invalid authentication token."
       locked: "Your account is locked."
-      not_found_in_database: "Correo electrónico o contraseña inválida."
+      not_found_in_database: "Usuario o contraseña inválida."
       timeout: "Your session expired, please sign in again to continue."
       unauthenticated: "You need to sign in or sign up before continuing."
       unconfirmed: "You have to confirm your account before continuing."
     mailer:
       confirmation_instructions:
-        subject: "Confirmation instructions"
+        subject: "Instrucciones de confirmación"
       reset_password_instructions:
         subject: "Reset password instructions"
       unlock_instructions:
