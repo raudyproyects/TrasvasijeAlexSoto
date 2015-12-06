@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cantidad: 1
+  fecha: 2015-12-05
+  cliente_id: MyString
+  materia_id: MyString
+
+two:
+  cantidad: 1
+  fecha: 2015-12-05
+  cliente_id: MyString
+  materia_id: MyString

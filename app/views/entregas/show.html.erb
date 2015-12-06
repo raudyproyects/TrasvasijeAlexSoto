@@ -1,0 +1,24 @@
+<!--<p id="notice"><%= notice %></p>-->
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @entrega.cantidad %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @entrega.fecha %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @entrega.cliente_id %>
+</p>
+
+<p>
+  <strong>Materia:</strong>
+  <%= @entrega.materia_id %>
+</p>
+
+<%= link_to 'Editar', edit_entrega_path(@entrega) %> |
+<%= link_to 'Volver', entregas_path %>

@@ -1,3 +1,29 @@
+
+
+@import"bootstrap";
+.no-float{
+	float:none;
+}
+
+
+
+
+
+
+
 .center{
-	text-align: center;
+    text-align: center;
+}
+
+#content {
+    width:100%;
+    background-color: white;
+    padding:25px 0 42px;
+}
+
+nav.navbar {
+    background-color:#008B8B;
+    border-radius:20px;
+    padding: 5px; /* dar margen desde el borde espacio al centro*/
+    box-shadow:0px 0px 20px rgba(0,0,0,0.5);
 }

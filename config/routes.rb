@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :entregas
+
+  resources :categoria
+
   resources :materia
 
   resources :clientes

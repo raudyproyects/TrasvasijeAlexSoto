@@ -1,0 +1,33 @@
+<%= form_for(@entrega) do |f| %>
+  <% if @entrega.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entrega.errors.count, "error") %>, no se puede guardar la entrega:</h2>
+
+      <ul>
+      <% @entrega.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cantidad %><br>
+    <%= f.number_field :cantidad %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br>
+    <%= f.date_select :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :cliente_id %><br>
+    <%= f.text_field :cliente_id %>
+  </div>
+  <div class="field">
+    <%= f.label :materia_id %><br>
+    <%= f.text_field :materia_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Aceptar" %>
+  </div>
+<% end %>
